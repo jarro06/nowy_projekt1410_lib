@@ -30,7 +30,7 @@
 
       def componentTest() {
           getLibFile('maven').testunit("component")
-          
+          // getLibFile('sonarqube').call()
       }
 
       def integrationTest() {
