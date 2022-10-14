@@ -25,24 +25,24 @@
       }
 
      def build() {
-         getLibFile('maven').build()
+         getLibFile('gradle').build()
      }
 
       def componentTest() {
-          getLibFile('maven').testunit("component")
+          getLibFile('gradle').testunit("component")
           
       }
 
       def integrationTest() {
-          getLibFile('maven').testunit("integration")
+          getLibFile('gradle').testunit("integration")
       }
 
       def uatTest() {
-          getLibFile('maven').testunit("uat")
+          getLibFile('gradle').testunit("uat")
       }
 
       def acceptanceTest() {
-          getLibFile('maven').testunit("acceptance")
+          getLibFile('gradle').testunit("acceptance")
       }
 
      def publishArtifacts() {
